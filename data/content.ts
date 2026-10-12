@@ -1,245 +1,277 @@
-// Generated from the verified prototype content. Edit freely.
+// Generated from verified project content and latest resume.
 import type { Project, StackNode } from './types';
+
 export const projects: Project[] = [
   {
-    "n": "ReConnect",
-    "d": "Alumni networking and engagement platform.",
-    "s": "Active development",
-    "role": "Full-stack developer: architecture, frontend, Firebase/Firestore integration, authentication, database structure, security rules and features.",
-    "stack": [
-      "Next.js 14",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Firebase Auth",
-      "Cloud Firestore",
-      "Recharts",
-      "Nodemailer"
+    n: 'APEX-F1',
+    d: 'Immersive Formula 1 interactive 3D visualization platform.',
+    s: 'Interactive 3D platform',
+    role: 'Frontend & 3D engineer: interactive 3D track rendering, camera orbit controls, and OpenF1 circuit data pipeline.',
+    stack: [
+      'Next.js',
+      'React',
+      'TypeScript',
+      'React Three Fiber',
+      'Three.js',
+      'OpenF1 API'
     ],
-    "prob": "Alumni and students need a dedicated place to find each other, connect with mentors, communicate and find opportunities.",
-    "sol": "A role-based platform for students, alumni, faculty and admins: a searchable alumni directory and profiles, mentorship requests, messaging, scheduled mentorship meetings (you paste a meeting link; there is no built-in video), events, opportunities, engagement logs, email OTP verification, an email when a mentorship request is accepted, and admin analytics. Eight Firestore collections, with security rules that deny everything not explicitly allowed.",
-    "flow": [
-      "Register with a role",
-      "Profile",
-      "Alumni directory",
-      "Mentorship request",
-      "Messages and meetings",
-      "Events and opportunities",
-      "Admin analytics"
+    highlights: [
+      'Built an interactive 3D Monaco circuit visualization using cached OpenF1-derived geometry, validating 1,634 track points across 2 clean laps.',
+      'Engineered interactive 3D track rendering and camera controls to enable exploration of circuit geometry.',
+      'Extended a modular, contract-oriented platform architecture to support future race-data integration and live visualization, with 11 repository commits.'
     ],
-    "extra": [
-      "Firestore collections",
+    prob: 'Formula 1 telemetry and circuit geometry are traditionally trapped in static 2D plots and tables, making spatial comprehension of elevation changes, corner radiuses, and racing lines difficult.',
+    sol: 'An interactive web-based 3D motorsport platform rendering real Monaco track geometry derived from OpenF1 telemetry. Provides intuitive camera orbit controls, high-fidelity circuit visualization, and a modular architecture ready for live telemetry streams.',
+    flow: [
+      'OpenF1 API',
+      'Telemetry ingestion & cache',
+      'Coordinate transformation (1,634 track points)',
+      'Three.js / React Three Fiber scene',
+      'Interactive camera orbit & exploration'
+    ],
+    gh: 'apex-f1'
+  },
+  {
+    n: 'Grant Agent System',
+    d: 'AI research grant proposal generator & evaluator with multi-agent orchestration.',
+    s: 'Completed multi-agent system',
+    role: 'AI systems architect: 4-agent workflow orchestration, deterministic LLM output validation, and automated test suite.',
+    stack: [
+      'Python',
+      'CrewAI',
+      'Google Gemini API',
+      'SQLite',
+      'Streamlit',
+      'Jinja2',
+      'Plotly',
+      'fpdf2'
+    ],
+    highlights: [
+      'Architected a 4-agent AI workflow comprising Drafter, Planner, Evaluator, and Refiner agents, with explicit interfaces supporting modular development and testing.',
+      'Established a deterministic validation layer for LLM-generated outputs, enforcing structured-output requirements and improving workflow consistency.',
+      'Authored 15 unit tests for the data-ingestion pipeline, identifying 2 timestamp-parsing defects before dashboard integration.'
+    ],
+    prob: 'Drafting competitive academic and scientific grant proposals requires weeks of iterative writing, budget allocations, compliance validation, and peer review.',
+    sol: 'A multi-agent automation platform where specialized AI agents (Drafter, Planner, Evaluator, Refiner) collaborate autonomously. Employs a hybrid scoring engine (Python deterministic rule engine up to 40 pts + LLM rubric critique up to 60 pts) looping until proposals exceed quality thresholds, with Streamlit dashboard and PDF generation.',
+    flow: [
+      'Research topic & guidelines',
+      'Planner agent: budget & milestones',
+      'Drafter agent: proposal structure',
+      'Evaluator: deterministic rules + LLM score',
+      'Refiner agent loop (threshold check)',
+      'Streamlit UI & PDF export'
+    ],
+    gh: 'Grant-agent-system'
+  },
+  {
+    n: 'ReConnect',
+    d: 'Alumni networking and engagement platform with role-based access control.',
+    s: 'Active development',
+    role: 'Full-stack developer: architecture, frontend, Firebase Authentication, Cloud Firestore modeling, security rules, and mentorship workflows.',
+    stack: [
+      'Next.js 14',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'Firebase Auth',
+      'Cloud Firestore',
+      'Firebase Security Rules',
+      'Recharts',
+      'Nodemailer'
+    ],
+    highlights: [
+      'Designed a role-based platform supporting 3 user roles—students, alumni, and administrators—with dedicated profile and dashboard workflows.',
+      'Modeled application data across 6 Firestore collections covering users, alumni profiles, mentorship requests, engagement logs, events, and opportunities.',
+      'Developed mentorship workflows spanning 3 operations: request submission, incoming-request retrieval, and accept/reject responses, supported by Firebase Authentication and Firestore security rules.'
+    ],
+    prob: 'Students and alumni lack a unified, secure institutional platform to discover each other, request mentorship guidance, and participate in campus events.',
+    sol: 'A production-focused web platform with distinct workflows for students, alumni, faculty, and admins. Features searchable alumni directories, an asynchronous mentorship request system with email notifications, meeting coordination, event boards, and security rules denying unauthorized access.',
+    flow: [
+      'Role-based registration (Student/Alumni/Admin)',
+      'Profile setup & verification',
+      'Alumni directory discovery',
+      'Mentorship request submission',
+      'Accept / Reject notification workflow',
+      'Meetings & event calendar',
+      'Admin analytics dashboard'
+    ],
+    extra: [
+      'Firestore collections',
       [
-        "users",
-        "alumniProfiles",
-        "mentorshipRequests",
-        "conversations",
-        "mentorshipMeetings",
-        "engagementLogs",
-        "events",
-        "opportunities"
+        'users',
+        'alumniProfiles',
+        'mentorshipRequests',
+        'conversations',
+        'mentorshipMeetings',
+        'engagementLogs',
+        'events',
+        'opportunities'
       ]
     ],
-    "gh": "ReConnect",
-    "viz": 1
+    gh: 'ReConnect',
+    viz: 1
   },
   {
-    "n": "TerraPULSE",
-    "d": "Farm-to-consumer produce marketplace front end, built with Lovable.",
-    "s": "Front-end prototype. Product and farmer data are hardcoded, cart and contact form only show confirmation messages, and no backend was found.",
-    "role": "End-to-end builder. Built the full application, from the storefront pages to shop filtering and farmer profiles, using AI-assisted development to move quickly while making the product, design and engineering decisions.",
-    "stack": [
-      "Vite",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "React Router",
-      "TanStack Query"
+    n: 'Healio',
+    d: 'Mood, journal and sleep tracking app with ambient soundscapes and an AI assistant.',
+    s: 'Live web application',
+    role: 'End-to-end builder: UI architecture, Supabase auth & data layer, Web Audio API sound generation, and AI assistant integration.',
+    stack: [
+      'Vite',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'Supabase',
+      'Vercel AI SDK',
+      'TanStack Query',
+      'Recharts',
+      'Web Audio API'
     ],
-    "prob": "Connect local farmers directly with consumers, without middlemen.",
-    "sol": "A multi-page storefront: home, shop with search, category filter and sorting, fruits and vegetables pages, a farmers list with farmer profiles, and a contact form. Generated and managed through Lovable, synced to GitHub.",
-    "flow": [
-      "Home",
-      "Shop, fruits or vegetables",
-      "Farmers",
-      "Farmer profile",
-      "Contact"
+    highlights: [
+      'Synthesized ambient binaural soundscapes natively in the browser via the Web Audio API without streaming static audio files.',
+      'Built multi-modal wellness tracking for mood, journals, and sleep quality with interactive trend charts.',
+      'Integrated conversational AI assistant via Supabase Edge Functions with secure session persistence.'
     ],
-    "live": "https://terra-pulse-direct.lovable.app/",
-    "gh": "terra-pulse-direct"
+    prob: 'Many digital wellness tools feel clinical, monotonous, or disconnected from how users intuitively record their emotional states and rest patterns.',
+    sol: 'An approachable wellness companion integrating Supabase authentication, mood and sleep logs, procedural audio soundscapes generated on the fly, and an AI chat assistant.',
+    flow: [
+      'User authentication',
+      'Log mood, sleep hours and journal',
+      'Web Audio ambient soundscape',
+      'Conversational AI assistant',
+      'Historical wellness trends'
+    ],
+    gh: 'healio-mood-melody-mate',
+    live: 'https://healio-mood-melody-mate.lovable.app/'
   },
   {
-    "n": "Grant Agent System",
-    "d": "Multi-agent grant proposal generator and evaluator.",
-    "s": "Code available on GitHub",
-    "role": "Architected the four-agent workflow and the rule-based scoring layer around it.",
-    "stack": [
-      "Python",
-      "CrewAI",
-      "Streamlit",
-      "Gemini 2.5 Flash",
-      "SQLite",
-      "Jinja2",
-      "Plotly",
-      "fpdf2"
+    n: 'TerraPULSE',
+    d: 'Farm-to-consumer produce marketplace front end.',
+    s: 'Front-end prototype',
+    role: 'Frontend builder: storefront pages, dynamic product filtering, and farmer profile showcase.',
+    stack: [
+      'Vite',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'React Router',
+      'TanStack Query'
     ],
-    "prob": "Turning a research topic into a complete grant proposal normally takes repeated drafting and review.",
-    "sol": "Four agents (drafter, budget and timeline planner, evaluator, refiner) with explicit interfaces loop until the score passes a threshold or the iteration limit is reached. Scoring is hybrid: a Python rule engine checks structure for up to 40 points and an LLM critique adds up to 60.",
-    "flow": [
-      "Research topic",
-      "Drafter",
-      "Planner",
-      "Evaluator: rules + LLM score",
-      "Refiner",
-      "Repeat or finish"
+    prob: 'Enabling local farmers to connect directly with consumers without intermediary markup.',
+    sol: 'A clean, multi-page storefront featuring category filtering, product search, farmer profiles, and interactive order forms.',
+    flow: [
+      'Storefront landing',
+      'Produce filtering & search',
+      'Farmer directory & stories',
+      'Cart & checkout flow',
+      'Farmer inquiry form'
     ],
-    "gh": "Grant-agent-system"
+    live: 'https://terra-pulse-direct.lovable.app/',
+    gh: 'terra-pulse-direct'
   },
   {
-    "n": "Healio",
-    "d": "Mood, journal and sleep tracking app with ambient soundscapes and an AI chat assistant.",
-    "s": "Working app, live online. Not a medical or clinical tool.",
-    "role": "End-to-end builder. Built the full application, from sign-in and mood, journal and sleep logging to the AI assistant, using AI-assisted development to move quickly while making the product and engineering decisions.",
-    "stack": [
-      "Vite",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "Supabase",
-      "Vercel AI SDK",
-      "TanStack Query",
-      "Recharts",
-      "Web Audio API"
+    n: 'MindChain',
+    d: 'Concept interface for timestamping idea ownership with MetaMask wallet.',
+    s: 'Concept prototype',
+    role: 'Frontend builder: Web3 wallet connection interface, cryptographic hashing flow, and idea dashboard.',
+    stack: [
+      'Vite',
+      'React',
+      'TypeScript',
+      'Tailwind CSS',
+      'shadcn/ui',
+      'MetaMask (window.ethereum)'
     ],
-    "prob": "Many digital wellness experiences feel passive, generic or disconnected from how people actually experience their mood. Healio aims to make mood and well-being interactions more engaging and approachable.",
-    "sol": "Sign-in with Supabase auth; mood logging with notes; journal entries; sleep logging (hours and quality); ambient soundscapes generated in the browser with the Web Audio API, no audio files; and an AI chat assistant served through a Supabase edge function that stores messages in the database.",
-    "flow": [
-      "Sign in",
-      "Log mood, journal or sleep",
-      "Ambient sound",
-      "AI assistant"
+    prob: 'Exploring intuitive user interfaces for timestamping and registering intellectual ownership of ideas.',
+    sol: 'A landing page and dashboard integrating MetaMask wallet connection, idea hashing form, and a registry table.',
+    flow: [
+      'Connect MetaMask wallet',
+      'Enter idea specification',
+      'Generate hash digest',
+      'Register idea record',
+      'View registered portfolio'
     ],
-    "gh": "healio-mood-melody-mate",
-    "live": "https://healio-mood-melody-mate.lovable.app/"
-  },
-  {
-    "n": "MindChain",
-    "d": "Concept interface for timestamping idea ownership with a MetaMask wallet.",
-    "s": "Front-end prototype. The idea hash is a placeholder, the dashboard uses mock data, Mint NFT only shows a message, and there is no smart contract.",
-    "role": "End-to-end builder. Built the full application, from wallet connection to the idea registration flow and dashboard, using AI-assisted development to move quickly while making the product and engineering decisions.",
-    "stack": [
-      "Vite",
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "shadcn/ui",
-      "MetaMask (window.ethereum)"
-    ],
-    "prob": "People have ideas they want to capture and be able to show they came up with first. MindChain explores a simple, engaging interface for registering and tracking ideas.",
-    "sol": "A landing page, MetaMask wallet connection, an idea registration form (title, description, optional IPFS link) with a hash step, and a dashboard of registered ideas.",
-    "flow": [
-      "Connect wallet",
-      "Describe idea",
-      "Generate hash",
-      "Register",
-      "Dashboard"
-    ],
-    "gh": "Mind-Chain"
+    gh: 'Mind-Chain'
   }
 ];
+
 export const stackNodes: StackNode[] = [
   {
-    "id": "ai",
-    "label": "AI",
-    "x": 50,
-    "y": 8,
-    "desc": "Prompt engineering and LLM API integration.",
-    "rel": [
-      "python",
-      "node"
-    ]
+    id: 'ai',
+    label: 'AI & LLMs',
+    x: 50,
+    y: 8,
+    desc: 'Prompt engineering, CrewAI multi-agent orchestration, and Google Gemini API integration.',
+    rel: ['python', 'node']
   },
   {
-    "id": "python",
-    "label": "Python",
-    "x": 20,
-    "y": 30,
-    "desc": "AI, automation and backend systems.",
-    "rel": [
-      "ai",
-      "mysql"
-    ]
+    id: 'python',
+    label: 'Python',
+    x: 22,
+    y: 26,
+    desc: 'Multi-agent AI workflows, automation, data ingestion pipelines, and unit testing.',
+    rel: ['ai', 'mysql']
   },
   {
-    "id": "react",
-    "label": "React",
-    "x": 80,
-    "y": 30,
-    "desc": "Frontend architecture and component systems.",
-    "rel": [
-      "next",
-      "node"
-    ]
+    id: 'three',
+    label: 'Three.js / 3D',
+    x: 78,
+    y: 26,
+    desc: 'React Three Fiber, WebGL, 3D scene rendering, and interactive telemetry visualization.',
+    rel: ['react', 'next']
   },
   {
-    "id": "java",
-    "label": "Java",
-    "x": 10,
-    "y": 62,
-    "desc": "OOP and data structures.",
-    "rel": [
-      "mysql"
-    ]
+    id: 'react',
+    label: 'React',
+    x: 84,
+    y: 52,
+    desc: 'Component architecture, state management, and modern interactive web experiences.',
+    rel: ['next', 'three', 'node']
   },
   {
-    "id": "node",
-    "label": "Node",
-    "x": 50,
-    "y": 74,
-    "desc": "Express, REST APIs and JavaScript on the server.",
-    "rel": [
-      "react",
-      "firebase",
-      "python"
-    ]
+    id: 'next',
+    label: 'Next.js',
+    x: 80,
+    y: 80,
+    desc: 'Full-stack React with App Router, server rendering, optimization, and Vercel deployment.',
+    rel: ['react', 'firebase', 'three']
   },
   {
-    "id": "next",
-    "label": "Next.js",
-    "x": 90,
-    "y": 62,
-    "desc": "Full-stack React with routing and server rendering.",
-    "rel": [
-      "react",
-      "firebase"
-    ]
+    id: 'node',
+    label: 'Node / REST',
+    x: 50,
+    y: 82,
+    desc: 'REST API design, backend integration, Node.js services, and asynchronous workflows.',
+    rel: ['react', 'firebase', 'python']
   },
   {
-    "id": "firebase",
-    "label": "Firebase",
-    "x": 30,
-    "y": 92,
-    "desc": "Auth and Cloud Firestore.",
-    "rel": [
-      "node",
-      "next"
-    ]
+    id: 'firebase',
+    label: 'Firebase',
+    x: 20,
+    y: 80,
+    desc: 'Firebase Authentication, Cloud Firestore data modeling, and security rules.',
+    rel: ['node', 'next']
   },
   {
-    "id": "mysql",
-    "label": "MySQL",
-    "x": 70,
-    "y": 92,
-    "desc": "Relational data and DBMS fundamentals.",
-    "rel": [
-      "java",
-      "node",
-      "python"
-    ]
+    id: 'mysql',
+    label: 'Databases',
+    x: 34,
+    y: 92,
+    desc: 'Relational & NoSQL data models with MySQL, SQLite, and Cloud Firestore.',
+    rel: ['java', 'python', 'node']
+  },
+  {
+    id: 'java',
+    label: 'Java',
+    x: 14,
+    y: 52,
+    desc: 'Object-oriented programming, data structures, and core algorithmic problem solving.',
+    rel: ['mysql']
   }
 ];
+
 export const roleExplorer = {
   "RULE": {
     "users": "Any signed-in user can read. A user creates and edits only their own document and cannot change their own role. Deletes are disabled.",

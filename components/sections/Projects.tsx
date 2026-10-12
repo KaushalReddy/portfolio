@@ -9,10 +9,34 @@ export default function Projects() {
   return (<section id="projects"><div className="wrap">
     <h2 className="t">Projects</h2>
     <p className="sub">Select a project to open its case study.</p>
-    <ul className="pl">{projects.map((p, k) => (<li key={p.n}><button onClick={() => { setI(k); pauseScroll(true); dlg.current?.showModal(); }}
-      onPointerMove={(e) => { const r = e.currentTarget.getBoundingClientRect(); e.currentTarget.style.setProperty('--x', `${e.clientX - r.left}px`); }}>
-      <span className="idx">{String(k + 1).padStart(2, '0')}</span><h3>{p.n}</h3><small>{p.d}</small><span className="arr" aria-hidden="true">→</span></button></li>))}</ul>
+    <ul className="pl">
+      {projects.map((p, k) => (
+        <li key={p.n}>
+          <button
+            onClick={() => {
+              setI(k);
+              pauseScroll(true);
+              dlg.current?.showModal();
+            }}
+            onPointerMove={(e) => {
+              const r = e.currentTarget.getBoundingClientRect();
+              e.currentTarget.style.setProperty('--x', `${e.clientX - r.left}px`);
+            }}
+            aria-label={`Open case study for ${p.n}: ${p.d}`}
+          >
+            <span className="idx">{String(k + 1).padStart(2, '0')}</span>
+            <div className="pl-info">
+              <h3>{p.n}</h3>
+              {p.stack && <span className="pl-stack">{p.stack.slice(0, 3).join(' · ')}</span>}
+            </div>
+            <small>{p.d}</small>
+            <span className="arr" aria-hidden="true">→</span>
+          </button>
+        </li>
+      ))}
+    </ul>
   </div>
+
   <dialog ref={dlg} data-lenis-prevent aria-labelledby="cst" onClose={() => pauseScroll(false)}
     onClick={(e) => e.target === dlg.current && dlg.current?.close()}
     onKeyDown={(e) => { if (e.key === 'ArrowRight') go(1); if (e.key === 'ArrowLeft') go(-1); }}>

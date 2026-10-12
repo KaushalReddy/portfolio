@@ -2,7 +2,13 @@
   "name": "kaushal-portfolio",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://kaushalparvatala.vercel.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KaushalReddy/portfolio.git"
+  },
   "scripts": {
+
     "dev": "next dev",
     "build": "next build",
     "start": "next start"

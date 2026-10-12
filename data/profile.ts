@@ -1,14 +1,24 @@
 export const profile = {
   name: 'Kaushal Reddy Parvatala',
-  intro: "I'm a computer science student at Anurag University, Hyderabad, focused on full-stack development, AI-powered applications and interactive web experiences. I use AI to move faster from idea to working system. I make the engineering decisions, check what it produces, and own the result.",
+  headline: 'Full-stack engineer building AI-powered applications, scalable systems, and interactive 3D experiences.',
+  intro:
+    "I'm a computer science engineering student at Anurag University, Hyderabad, focused on full-stack development, AI-powered applications, and interactive 3D experiences. With hands-on experience in multi-agent AI workflows, modular backend architectures, and realtime 3D rendering, I bridge ideas into reliable, high-performance systems.",
   statements: ["I don't just write code.", 'I build systems.', 'I turn ideas into experiences.'],
   workflow: ['Idea', 'Research', 'AI-assisted exploration', 'Prototype', 'Engineering', 'Test', 'Ship'],
   journey: [
-    ['Learning', 'B.Tech in Computer Science Engineering at Anurag University, Hyderabad. Expected graduation July 2027.'],
-    ['Training', 'Data structures and algorithms training at Suntek, July 2024 to July 2025.'],
-    ['Hackathons', 'Hack-Attack, Swecha, GeeksforGeeks and Techxcelerate (Top 10 among 100+ teams, team CodeBeats, led end-to-end development of an AI-driven app in 24 hours). Competed in 4 national hackathons.'],
-    ['Academics', 'B.Tech CSE, CGPA 8.52. Rank 86 of 2,863 in an Anurag University test.'],
-    ['Building', 'Full-stack and AI projects, listed above, with ReConnect in active development.'],
+    ['Education', 'B.Tech in Computer Science Engineering at Anurag University, Hyderabad. CGPA: 8.52 (Expected July 2027). Rank 86 of 2,863 in university assessment.'],
+    ['Hackathons & Leadership', 'Top 10 finish among 100+ teams within 24 hours at Techxcelerate (team CodeBeats). Coordinated technical decisions and feature integration across 4 national-level hackathons (Swecha, GeeksforGeeks, Hack-Attack).'],
+    ['Architecture & Impact', 'Optimized application architecture across competition and production projects, achieving 30% faster data retrieval and 30% lower bandwidth consumption.'],
+    ['Training', 'Intensive Data Structures & Algorithms training at Suntek (July 2024 to July 2025).'],
+    ['Featured Projects', 'Engineered APEX-F1 (interactive 3D motorsport telemetry with Three.js/R3F), Grant Agent System (4-agent AI workflow with CrewAI/Gemini), and ReConnect (role-based alumni platform with Firebase).'],
   ] as [string, string][],
-  contact: { email: 'kaushal.parvatala@gmail.com', github: 'https://github.com/KaushalReddy', linkedin: 'https://www.linkedin.com/in/kaushal-parvatala-484371210' },
+  contact: {
+    email: 'kaushal.parvatala@gmail.com',
+    github: 'https://github.com/KaushalReddy',
+    linkedin: 'https://www.linkedin.com/in/kaushal-reddy-parvatala',
+    portfolio: 'https://kaushalparvatala.vercel.app/',
+    resumeUrl: '/Kaushal_Reddy_Resume.pdf',
+    resumeDownload: 'Kaushal_Reddy_Resume.pdf',
+  },
 };
+

@@ -1,233 +1,119 @@
 # Kaushal Reddy Parvatala — Portfolio
 
-> **I don't just write code. I build systems.**
+> **Full-stack engineer building AI-powered applications, scalable systems, and interactive 3D experiences.**
 
-My personal developer portfolio showcasing my projects, technical journey, skills, hackathon experience, and approach to building digital products.
+Personal developer portfolio showcasing full-stack systems, multi-agent AI architectures, interactive 3D graphics, technical skills, and hackathon accomplishments.
 
-🌐 **Live Portfolio:** https://kaushalparvatala.vercel.app/
-
----
-
-## 👨‍💻 About
-
-I'm **Kaushal Reddy Parvatala**, a Computer Science Engineering student at **Anurag University, Hyderabad**, focused on building full-stack applications, AI-powered systems, and interactive web experiences.
-
-I use AI-assisted development to move faster from idea to working systems while keeping engineering decisions, testing, and the final result under my ownership.
-
-Currently pursuing my **B.Tech in Computer Science Engineering**, with an expected graduation in **2027**.
+- 🌐 **Live Portfolio:** [https://kaushalparvatala.vercel.app/](https://kaushalparvatala.vercel.app/)
+- 📄 **Resume (PDF):** [View Latest Resume](https://kaushalparvatala.vercel.app/Kaushal_Reddy_Resume.pdf)
+- 🐙 **GitHub:** [https://github.com/KaushalReddy](https://github.com/KaushalReddy)
+- 💼 **LinkedIn:** [https://www.linkedin.com/in/kaushal-reddy-parvatala](https://www.linkedin.com/in/kaushal-reddy-parvatala)
+- ✉️ **Email:** [kaushal.parvatala@gmail.com](mailto:kaushal.parvatala@gmail.com)
 
 ---
 
-## ⚡ Tech Stack
+## ⚡ Tech Stack & Architecture
 
-### Languages
-- Python
-- Java
-- C
-- C++
-- TypeScript
-
-### Frontend
-- React
-- Next.js
-- Tailwind CSS
-- HTML
-- CSS
-
-### Backend & Database
-- Node.js
-- Express.js
-- Firebase
-- Cloud Firestore
-- MySQL
-- MongoDB
-
-### Tools & Platforms
-- Git
-- GitHub
-- Vercel
-- Linux
-- Firebase
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, Turbopack, React 19)
+- **3D & Graphics**: [Three.js](https://threejs.org/), [@react-three/fiber](https://r3f.docs.pmnd.rs/) (interactive wireframe core with camera orbit controls)
+- **Animations & Scrolling**: [GSAP](https://gsap.com/) ScrollTrigger, [Lenis](https://github.com/darkroomengineering/lenis) smooth scroll
+- **Styling**: Vanilla CSS & Tailwind CSS v4 design system
+- **Typography**: Google Fonts (*Unbounded* and *Hanken Grotesk*)
+- **Deployment**: [Vercel](https://vercel.com)
 
 ---
 
 ## 🚀 Featured Projects
 
-### 01 — ReConnect
-
-**Alumni networking and engagement platform**
-
-A role-based platform connecting students, alumni, faculty, and administrators through mentorship, networking, events, and opportunities.
-
-**Key Features**
-- Role-based authentication and dashboards
-- Alumni profiles and searchable directory
-- Mentorship requests
-- Messaging and mentorship meetings
-- Events and opportunities
-- Admin analytics
-- Engagement tracking
-- Email OTP verification
-- Firestore security rules
-
-**Tech:** Next.js · React · TypeScript · Tailwind CSS · Firebase · Cloud Firestore · Recharts · Nodemailer
+### 01 — APEX-F1
+**Immersive Formula 1 Interactive 3D Visualization Platform**
+- **Repository:** [https://github.com/KaushalReddy/apex-f1](https://github.com/KaushalReddy/apex-f1)
+- **Tech Stack:** Next.js, React, TypeScript, React Three Fiber, Three.js, OpenF1 API
+- **Highlights:**
+  - Built an interactive 3D Monaco circuit visualization using cached OpenF1-derived geometry, validating 1,634 track points across 2 clean laps.
+  - Engineered interactive 3D track rendering and camera controls to enable exploration of circuit geometry.
+  - Extended a modular, contract-oriented platform architecture to support future race-data integration and live visualization.
 
 ---
 
-### 02 — TerraPULSE
-
-**Farm-to-consumer produce marketplace**
-
-A digital platform focused on connecting agricultural producers with consumers through a modern marketplace experience.
-
-**Tech:** React · Web Development · AI-assisted Development
+### 02 — Grant Agent System
+**AI Research Grant Proposal Generator & Evaluator**
+- **Repository:** [https://github.com/KaushalReddy/Grant-agent-system](https://github.com/KaushalReddy/Grant-agent-system)
+- **Tech Stack:** Python, CrewAI, Google Gemini API, SQLite, Streamlit, Jinja2, Plotly, fpdf2
+- **Highlights:**
+  - Architected a 4-agent AI workflow comprising Drafter, Planner, Evaluator, and Refiner agents with explicit interfaces.
+  - Established a deterministic validation layer for LLM-generated outputs, enforcing structured-output requirements.
+  - Authored 15 unit tests for the data-ingestion pipeline, identifying 2 timestamp-parsing defects before dashboard integration.
 
 ---
 
-### 03 — Grant Agent System
-
-**Multi-agent grant proposal generator and evaluator**
-
-An AI-powered system designed to assist with generating and evaluating grant proposals using multiple specialized agents.
-
-**Focus:** AI Agents · Automation · Evaluation
+### 03 — ReConnect
+**Alumni Networking & Mentorship Platform with Role-Based Access Control**
+- **Repository:** [https://github.com/KaushalReddy/ReConnect](https://github.com/KaushalReddy/ReConnect)
+- **Tech Stack:** Next.js 14, React, TypeScript, Tailwind CSS, Firebase Auth, Cloud Firestore, Firebase Security Rules, Recharts, Nodemailer
+- **Highlights:**
+  - Designed a role-based platform supporting 3 user roles—students, alumni, and administrators—with dedicated profile and dashboard workflows.
+  - Modeled application data across 6 Firestore collections covering users, alumni profiles, mentorship requests, engagement logs, events, and opportunities.
+  - Developed mentorship workflows spanning 3 operations: request submission, incoming-request retrieval, and accept/reject responses, supported by Firestore security rules.
 
 ---
 
 ### 04 — Healio
-
-**Mood, journal and sleep tracking application**
-
-A wellness-focused application combining mood tracking, journaling, sleep tracking, ambient soundscapes, and an AI chat assistant.
-
-**Focus:** AI · Interactive UX · Personal Tracking
+**Mood, Journal & Sleep Tracking App with Ambient Soundscapes & AI Assistant**
+- **Live Demo:** [https://healio-mood-melody-mate.lovable.app/](https://healio-mood-melody-mate.lovable.app/)
+- **Tech Stack:** Vite, React, TypeScript, Tailwind CSS, Supabase, Vercel AI SDK, Web Audio API
 
 ---
 
-### 05 — MindChain
-
-**Blockchain-based idea ownership concept**
-
-A concept interface for timestamping idea ownership using a MetaMask wallet.
-
-**Focus:** Web3 · Blockchain · MetaMask
+### 05 — TerraPULSE
+**Farm-to-Consumer Direct Produce Marketplace**
+- **Live Demo:** [https://terra-pulse-direct.lovable.app/](https://terra-pulse-direct.lovable.app/)
+- **Tech Stack:** Vite, React, TypeScript, Tailwind CSS, shadcn/ui, TanStack Query
 
 ---
 
-## 🏆 Hackathons
+### 06 — MindChain
+**Concept Interface for Timestamping Idea Ownership with MetaMask**
+- **Tech Stack:** Vite, React, TypeScript, Tailwind CSS, MetaMask (window.ethereum)
 
-I've participated in **four national-level hackathons**, including:
+---
 
-- **Hack-Attack**
-- **Swecha Hackathon**
-- **GeeksforGeeks Hackathon**
-- **Techxcelerate Hackathon**
+## 🏆 Hackathons & Leadership
 
-### 🥇 Techxcelerate
-
-**Top 10 among 100+ teams**
-
-Led the end-to-end development of an **AI-driven application** as part of Team CodeBeats during a 24-hour hackathon.
+- **Techxcelerate (CodeBeats)**: **Top 10 finish among 100+ teams**; led development of an AI-driven application within 24 hours.
+- **National Hackathons**: Competed across 4 national-level hackathons (Swecha, GeeksforGeeks, Hack-Attack, Techxcelerate), coordinating technical decisions and feature integration under tight deadlines.
+- **Architecture & Optimization**: Optimized application architecture across competition projects, achieving 30% faster data retrieval and 30% lower bandwidth consumption.
 
 ---
 
 ## 🎓 Education
 
-**B.Tech — Computer Science & Engineering**
-
-**Anurag University, Hyderabad**
-
-Expected Graduation: **July 2027**
-
-**CGPA:** 8.52
-
-**Academic Achievement:** Ranked **86th among 2,863 students** in an Anurag University test.
+- **B.Tech — Computer Science & Engineering** | Anurag University, Hyderabad
+- **CGPA:** 8.52 (Expected July 2027)
+- **Academic Ranking:** Ranked 86th among 2,863 students in university assessment.
 
 ---
 
-## 📚 Experience & Learning
+## 🛠️ Local Development
 
-### Data Structures & Algorithms Training
-**Suntek**  
-July 2024 — July 2025
+```bash
+# Clone the repository
+git clone https://github.com/KaushalReddy/portfolio.git
+cd portfolio
 
-Focused on problem solving, algorithms, data structures, and competitive programming fundamentals.
+# Install dependencies
+npm install
 
----
+# Start local development server
+npm run dev
+# Open http://localhost:3000
 
-## 🧠 My Development Philosophy
-
-```text
-Idea
-  ↓
-Research
-  ↓
-AI-Assisted Exploration
-  ↓
-Prototype
-  ↓
-Engineering
-  ↓
-Testing
-  ↓
-Ship
+# Build for production
+npm run build
 ```
 
-AI helps shorten the distance between an idea and a working system.
-
-**Judgment stays with me.**
-
 ---
 
-## 📊 Areas of Interest
+## 📄 License
 
-- Full-Stack Development
-- Artificial Intelligence
-- AI Agents
-- Backend Engineering
-- Cloud & Firebase
-- Interactive Web Experiences
-- System Design
-- Data Structures & Algorithms
-- Product Development
-
----
-
-## 🌐 Portfolio
-
-**Visit my portfolio:**
-
-### https://kaushalparvatala.vercel.app/
-
-Explore my:
-
-- Projects
-- Technical stack
-- Development journey
-- Hackathon experience
-- Academic background
-- Contact information
-
----
-
-## 📬 Connect With Me
-
-**Email:** kaushal.parvatala@gmail.com
-
-**GitHub:** https://github.com/KaushalReddy
-
-**LinkedIn:** Add your LinkedIn URL here
-
----
-
-## ⭐ About This Repository
-
-This repository contains the source code for my personal portfolio website.
-
-The portfolio is designed to showcase not only what I build, but **how I approach building systems — from an initial idea to a working product.**
-
----
-
-<p align="center">
-  Built with curiosity, code & AI.
-</p>
+MIT © [Kaushal Reddy Parvatala](https://github.com/KaushalReddy)
