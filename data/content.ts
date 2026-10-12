@@ -49,7 +49,7 @@ export const projects: Project[] = [
     highlights: [
       'Architected a 4-agent AI workflow comprising Drafter, Planner, Evaluator, and Refiner agents, with explicit interfaces supporting modular development and testing.',
       'Established a deterministic validation layer for LLM-generated outputs, enforcing structured-output requirements and improving workflow consistency.',
-      'Authored 15 unit tests for the data-ingestion pipeline, identifying 2 timestamp-parsing defects before dashboard integration.'
+      'Implemented configurable refinement iterations and a hybrid evaluation workflow combining deterministic scoring with LLM-based critique.'
     ],
     prob: 'Drafting competitive academic and scientific grant proposals requires weeks of iterative writing, budget allocations, compliance validation, and peer review.',
     sol: 'A multi-agent automation platform where specialized AI agents (Drafter, Planner, Evaluator, Refiner) collaborate autonomously. Employs a hybrid scoring engine (Python deterministic rule engine up to 40 pts + LLM rubric critique up to 60 pts) looping until proposals exceed quality thresholds, with Streamlit dashboard and PDF generation.',

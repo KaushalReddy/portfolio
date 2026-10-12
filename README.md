@@ -43,7 +43,7 @@ Personal developer portfolio showcasing full-stack systems, multi-agent AI archi
 - **Highlights:**
   - Architected a 4-agent AI workflow comprising Drafter, Planner, Evaluator, and Refiner agents with explicit interfaces.
   - Established a deterministic validation layer for LLM-generated outputs, enforcing structured-output requirements.
-  - Authored 15 unit tests for the data-ingestion pipeline, identifying 2 timestamp-parsing defects before dashboard integration.
+  - Implemented configurable refinement iterations and a hybrid evaluation workflow combining deterministic scoring with LLM-based critique.
 
 ---
 
@@ -82,7 +82,7 @@ Personal developer portfolio showcasing full-stack systems, multi-agent AI archi
 
 - **Techxcelerate (CodeBeats)**: **Top 10 finish among 100+ teams**; led development of an AI-driven application within 24 hours.
 - **National Hackathons**: Competed across 4 national-level hackathons (Swecha, GeeksforGeeks, Hack-Attack, Techxcelerate), coordinating technical decisions and feature integration under tight deadlines.
-- **Architecture & Optimization**: Optimized application architecture across competition projects, achieving 30% faster data retrieval and 30% lower bandwidth consumption.
+- **Architecture & Engineering**: Focused on modular architecture, maintainability, and clear separation of responsibilities across projects.
 
 ---
 
